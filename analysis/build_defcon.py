@@ -92,7 +92,7 @@ def main() -> None:
     print()
     for pos in ["DEF", "MID", "FWD"]:
         print("=" * 110)
-        print(f"TOP 20 DEFCON — {pos} (threshold {THRESHOLD[pos]} "
+        print(f"TOP 20 DEFCON: {pos} (threshold {THRESHOLD[pos]} "
               f"{'CBIT' if pos == 'DEF' else 'CBIRT'})")
         print("=" * 110)
         s = q[q["pos"] == pos].head(20).copy()

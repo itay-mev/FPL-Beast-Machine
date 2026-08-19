@@ -131,7 +131,7 @@ def main() -> None:
     print()
     for pos in ["GKP", "DEF", "MID", "FWD"]:
         print("=" * 96)
-        print(f"TOP 12 PROJECTED — {pos}")
+        print(f"TOP 12 PROJECTED: {pos}")
         print("=" * 96)
         s = m[m["pos"] == pos].nlargest(12, "ep_season").copy()
         for c in ["ep1", "ep_gw1_6", "ep_season", "ep_per_m"]:
